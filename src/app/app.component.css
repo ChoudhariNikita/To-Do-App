@@ -1,5 +1,19 @@
 h1 {
     color: black;
-    align-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-app {
+    float: left;
+}
+
+.main-app button {
+    margin-left: 5px;
+    background-color: rgb(8, 243, 20);
+    border: none;
+    box-shadow: 0 0 5px rgb(186, 182, 182);
+}
+
+button:hover {
+    cursor: pointer;
 }
