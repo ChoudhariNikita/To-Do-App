@@ -12,5 +12,6 @@ export class AppComponent {
 
   addItem() {
     this.itemList.push(this.itemName);
+    this.itemName = "";
   }
 }
