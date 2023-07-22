@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'To-Do-App';
+  itemList = ['Learn React', 'Create Portfolio'];
+  itemName = '';
+
+  addItem() {
+    this.itemList.push(this.itemName);
+  }
 }
