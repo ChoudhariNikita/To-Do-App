@@ -7,11 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'To-Do-App';
-  itemList = ['Learn React', 'Create Portfolio'];
+  itemList = [' '];
   itemName = '';
-
+  count = 0;
+  see = true;
   addItem() {
+    if (this.count == 0) {
+      this.itemList.pop();
+    }
     this.itemList.push(this.itemName);
+    this.see = false;
     this.itemName = "";
+    this.count = 1;
   }
 }

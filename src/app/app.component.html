@@ -1,13 +1,15 @@
 <div class="container">
   <h1>TO DO APP</h1>
   <div class="main-app">
-    <input type="text" name="item" size=80 placeholder="Enter an item" [(ngModel)]="itemName">
-    <button (click)="addItem()">Add Item</button>
+    <input type="text" id="input-item" name="item" size=80 placeholder="Enter an item" [(ngModel)]="itemName">
+    <button (click)="addItem()" [disabled]="">Add Item</button>
   </div>
   <br>
   <div class="list-of-items">
-    <ul>
-      <li *ngFor="let items of itemList">{{items}} <input type="checkbox"></li>
-    </ul>
+    <div class="title">Tasks List...
+      <ul>
+        <li *ngFor="let items of itemList" [hidden]="see">{{items}} <input type="checkbox"></li>
+      </ul>
+    </div>
   </div>
 </div>
