@@ -1,6 +1,14 @@
+.container,#text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 h1 {
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .main-app {
@@ -18,13 +26,36 @@ button:hover {
     cursor: pointer;
 }
 
+#del{
+    margin-left: 5px;
+    background-color: rgb(243, 8, 8);
+    border: none;
+    box-shadow: 0 0 5px rgb(186, 182, 182);
+}
+
 .title {
     margin-top: 10px;
     padding: 5px;
     width: 500px;
-    background-color: rgb(211, 183, 189);
-    color: white;
+    background-color: none;
+    color: crimson;
     border: 2px solid white;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+#text{
+    font-size: large;
+}
+.display-list{
+    display:flex;
+    flex-direction: column;
+    color: violet;
+    width:500px;
+    border:2 2 0 2px;
+    background-color: azure;
 }
