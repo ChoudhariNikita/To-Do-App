@@ -15,19 +15,17 @@
   <br />
   <div class="list-of-items">
     <div class="title">
-      <p id="text">Tasks List</p>
-      <div class="display-list">
-        <ul>
-          <li
-            *ngFor="let items of itemList"
-            [hidden]="see"
-            [ngStyle]="{ 'text-decoration': 'getDecor()' }"
-          >
-            {{ items }}
-            <input type="checkbox" [checked]="chkstat" />
-          </li>
-        </ul>
-      </div>
+      <h2 id="text">Tasks List</h2>
+      <ul>
+        <li
+          *ngFor="let items of itemList"
+          [hidden]="see"
+          [ngStyle]="{ 'text-decoration': 'getDecor()' }"
+        >
+          {{ items }}
+          <input type="checkbox" class="item-checkbox" [checked]="chkstat" />
+        </li>
+      </ul>
     </div>
   </div>
 </div>
