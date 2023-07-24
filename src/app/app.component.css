@@ -62,7 +62,7 @@ input[type="text"]::placeholder {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 400px;
+  width: 600px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -71,11 +71,11 @@ input[type="text"]::placeholder {
   text-align: center;
   margin-bottom: 20px;
 }
-/* 
+
 .title ul {
-  list-style-type: none;
-  padding: 0;
-} */
+  max-height: 400px; /* Set the maximum height for the todo list */
+  overflow-y: auto;
+}
 
 .title li {
   padding: 10px 20px;
@@ -97,7 +97,12 @@ input[type="text"]::placeholder {
 }
 
 .item-checkbox {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-  }
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.item-checkbox + label {
+  margin: 0;
+  cursor: pointer;
+}
